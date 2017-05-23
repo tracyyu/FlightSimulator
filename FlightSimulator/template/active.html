@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    
+	    <title>Teledyne Controls</title>
+
+		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+	</head>
+	
+	
+	<body>
+		<div class="container">
+
+			{% include 'header.html' %}
+
+			{% include 'infoPanel.html' %}
+
+			{% include 'errorPanel.html' %}
+
+ 			{% include 'nav.html' %}
+
+			<ul class="nav nav-tabs" role="tablist">
+			  <li class="active"><a href="#">Active Info</a></li>
+			  <li><a href="/cgi-bin/map.py">Map</a></li>
+			</ul>
+
+
+			<div id="ADBPtable"/>
+		
+			{% include 'common_includes.html' %}
+			<script type="text/javascript" src="/js/grabTableHtml.js" ></script>
+
+		</div>
+	</body>
+</html>

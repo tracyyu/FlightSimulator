@@ -1,0 +1,87 @@
+
+
+<div class="col-md-4">
+
+	<div class="data-group">
+		<h3> Flight Data </h3>
+		<table class="table table-condensed">
+
+				{%- for keys in TimeFrame -%}
+					{%- for value in keys -%}
+
+					<tr>
+						<td> {{value}} </td>
+						<td> {{keys[value]}} </td>
+					</tr>
+
+					{%- endfor -%}
+				{%- endfor -%}
+
+		</table>
+	</div>
+
+	<div class="data-group">
+		<h3>Flight Summary</h3>
+		<table class="table table-condensed">
+
+		{%- for keys in FlightSum -%}
+			{%- for value in keys -%}
+
+					<tr>
+						<td> {{value}} </td>
+						<td> {{keys[value]}} </td>
+					</tr>
+
+			{%- endfor -%}
+		{%- endfor -%}
+		</table>
+	</div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+	<div class="data-group">
+		<h3> Flight Status </h3>
+		<table class="table table-condensed">
+
+			{%- for keys in FlightStat -%}
+				{%- for value in keys -%}
+
+					<tr>
+						<td> {{value}} </td>
+						<td> {{keys[value]}} </td>
+					</tr>
+
+				{%- endfor -%}
+			{%- endfor -%}
+		</table>
+	</div>
+</div>
+
+
+<div class="col-md-4">
+
+	<div class="data-group">
+	<h3> Aircraft Status </h3>
+	<table class="table table-condensed">
+
+		{%- for keys in AircraftStat -%}
+			{%- for value in keys -%}
+
+				<tr>
+					<td> {{value}} </td>
+					<td> {{keys[value]}} </td>
+				</tr>
+
+			{%- endfor -%}
+		{%- endfor -%}
+		
+	</table>
+	</div>
+	
+</div>
+
+

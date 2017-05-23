@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+	    <title>Teledyne Controls</title>
+
+		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWg1Gxfn5mlcz5ejlKHTFNHZjx0xRPLQk"></script>
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			{% include 'header.html' %}
+
+			{% include 'infoPanel.html' %}
+
+			{% include 'errorPanel.html' %}
+
+			{% include 'nav.html' %}
+
+			<ul class="nav nav-tabs" role="tablist">
+				<li><a href="/cgi-bin/active.py">Active Info</a></li>
+				<li class="active"><a href="#">Map</a></li>
+			</ul>
+
+
+			<div id="map-canvas" />
+
+			{% include 'common_includes.html' %}
+			<script type="text/javascript" src="/js/mapsAsyncUpdate.js" ></script>	
+
+		</div>
+	</body>
+</html>
